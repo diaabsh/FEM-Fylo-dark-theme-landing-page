@@ -1,0 +1,376 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --bg-main: hsl(218, 28%, 13%);
+    --bg-scnd: hsl(217, 28%, 15%);
+    --bg-footer: hsl(216, 53%, 9%);
+    --bg-testimonials: hsl(219, 30%, 18%);
+    --cyan: hsl(176, 68%, 64%);
+    --blue: hsl(198, 60%, 50%);
+    --red: hsl(0, 100%, 63%);
+    --white: hsl(0, 0%, 100%);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    font-size: 14px;
+    font-family: "Open Sans", sans-serif;
+    color: #fff;
+    /* font-family: "Raleway", sans-serif; */
+}
+
+h1, h2, h3 {
+    font-family: "Raleway", sans-serif;
+}
+
+/* Utility Classes */
+.btn {
+    display: inline-block;
+    padding: 15px;
+    margin-top: 30px;
+    border-radius: 50px;
+    width: 225px;
+    border: none;
+    font-family: "Raleway", sans-serif;
+    cursor: pointer;
+    background: linear-gradient(to right, var(--blue), var(--cyan));
+    color: #fff;
+    font-weight: 500;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 2rem;
+}
+
+/* !Header S */
+.header {
+    background: url(../images/bg-curvy-desktop.svg) no-repeat bottom/contain var(--bg-scnd) ;
+}
+
+.header .navbar {
+    max-width: 1200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 150px;
+    padding: 0 2rem;
+    margin: auto;
+}
+
+.header .navbar ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header .navbar ul a {
+    color: #fff;
+    margin-left: 40px;
+    cursor: pointer;
+    font-family: "Raleway", sans-serif;
+    padding-bottom: 5px;
+    
+}
+
+.header .navbar ul a:hover {
+    border-bottom: solid 1px #fff;
+}
+
+
+.header .header-content {
+    text-align: center;
+    max-width: 700px;
+    margin: auto;
+    padding: 5rem 0 10rem;
+}
+
+.header .header-content h1 {
+    font-size: 40px;
+    margin: 2rem 0 1rem;
+    line-height: 1.4;
+}
+
+.header .header-content p {
+    max-width: 450px;
+    margin: auto;
+    line-height: 1.5;
+}
+
+.header .header-content img, .section-two .row img {
+    max-width: 100%;
+}
+
+/* !Header End */
+
+/* !Section-one Start */
+
+.section-one {
+    background-color: var(--bg-main);
+    padding: 5rem 2rem;
+}
+
+.section-one .row {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem 7rem;
+    text-align: center;
+    margin: auto;
+    max-width: 800px;
+}
+
+.section-one .row .item h2 {
+    font-size: 20px;
+    margin: 15px 0 5px;
+}
+
+/* !Section-one End */
+
+/* !Section-two Start */
+.section-two {
+    background-color: var(--bg-main);
+    padding: 5rem 0rem;
+}
+.section-two .row {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    column-gap: 5rem;
+    margin: auto;
+}
+
+
+.section-two h2 {
+    font-size: 36px;
+    max-width: 70%;
+}
+
+.section-two p {
+    margin: 20px 0;
+    padding-right: 2rem;
+}
+
+.section-two .content a {
+    color: var(--cyan);
+    border-bottom: 1px solid var(--cyan);
+    padding-bottom: 3px;
+}
+
+.section-two .content a i {
+    font-size: 12px;
+    margin-left: 2px;
+}
+
+.section-two .content a:hover {
+    color: #fff;
+    border-color: #fff;
+    transition: 0.3s ease;
+}
+/* !Section-two End */
+
+/* !Section-three Start */
+.section-three {
+    background-image: url(../images/bg-quotes.png);
+    background-repeat: no-repeat;
+    background-position: 28% 8%;
+    background-color: var(--bg-main);
+    padding: 5rem 0 20rem;
+}
+
+.section-three .container .quote {
+    position: relative;
+}
+
+.section-three .container .row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 3rem;
+}
+
+.section-three .container .item {
+    background-color: var(--bg-testimonials);
+    display: flex;
+    flex-direction: column;
+    padding: 40px 30px 30px;
+    border-radius: 5px;
+}
+
+.section-three .container .item .person {
+    display: flex;
+    margin-top: 24px;
+    align-items: center;
+}
+
+.section-three .container .item .person img {
+    width: 30px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.avatar h3 {
+    font-size: 12px;
+}
+
+.avatar p {
+    font-size: 10px;
+    margin-top: 2px;
+}
+
+/* !Section-three End */
+
+/* !Footer */
+.footer {
+background-color: var(--bg-footer);
+padding-bottom: 5rem;
+}
+
+.footer .container .sign-up {
+    background-color: var(--bg-scnd);
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+    padding: 3rem 5rem;
+    text-align: center;
+    max-width: 800px;
+    margin: auto;
+    transform: translateY(-50%);
+}
+
+.footer .container .sign-up h2 {
+    font-size: 30px;
+
+}
+
+.footer .container .sign-up p {
+    margin: 1rem 0;
+}
+
+#form input {
+    width: 65%;
+    padding: 15px;
+    border-radius: 30px;
+    border: none;
+    margin-right: 20px;
+}
+
+#form .btn {
+    width: 30%;
+}
+
+.footer .row {
+    display: grid;
+    grid-template-columns: 3fr 2fr 1fr 1fr 1fr;
+    margin-top: 1rem;
+    column-gap: 2rem;
+}
+
+.col {
+    display: flex;
+    align-items: start;
+
+}
+
+.col img {
+    margin-right: 20px;
+    margin-top: 2px;
+}
+
+.footer .row ul li {
+    margin-bottom: 20px;
+}
+
+.footer a {
+    color: #fff;
+}
+
+.footer .row ul img {
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.social i {
+    margin-right: 5px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 2;
+}
+
+.social i:hover {
+    color: var(--cyan);
+    border: 1px solid var(--cyan);
+    transition: 0.3s ease;
+}
+
+@media (max-width: 700px) {
+    .header .navbar img {
+        width: 80px;
+    }
+
+    .intro-image {
+        max-width: 100%;
+    }
+
+    .header .header-content {
+        padding: 5rem 2rem 10rem;
+    }
+
+    .header .header-content h1 {
+        font-size: 25px;
+    }
+
+
+    .header .navbar ul li a {
+        margin: 0 10px;
+    }
+
+    .section-one .row {
+        grid-template-columns: 1fr;
+    }
+
+    .section-two .row, .section-three .container .row {
+        grid-template-columns: 1fr;
+        row-gap: 3rem;
+    }
+
+    .footer .container .sign-up {
+        padding: 2rem 2rem;
+    }
+    .section-two h2 {
+        font-size: 24px;
+    }
+
+    .section-three {
+        background-position: 18% 4%;
+    }
+
+    .footer .container .sign-up h2 {
+        font-size: 20px;
+    }
+
+    #form .btn , #form input {
+        width: 100%;
+    }
+
+    .footer .row {
+        grid-template-columns: 1fr;
+        row-gap: 2rem;
+    }
+    
+
+}
